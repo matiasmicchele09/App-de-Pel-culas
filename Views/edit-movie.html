@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/responsimple.min.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/estilos.css" type="text/css" />
+    <title>Editar Películas</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="item logo"></div>
+        <div class="item">
+            <h4><a href="/">Regresar</a></h4>
+            <br>
+            <h1>Editar esta Película</h1>
+        </div>
+        <div class="item">
+            <!-- <form id="formEditar" method="POST"> -->
+            <form>
+                <fieldset>
+                    <div class="container p1">
+                        <label for="movie_id" class="item i-b v-top ph3 right">IMDB id:</label>
+                        <input id="movie_id" type="text" name="id" value="" disabled="" required="" class="item i-b v-top ph9">
+                    </div>
+                    <div class="container p1">
+                        <label for="title" class="item i-b v-top ph3 right">Título:</label>
+                        <input id="title_movie" type="text" name="title" value="" required="" class="item i-b v-top ph9">
+                    </div>
+                    <div class="container p1">
+                        <label for="release_year" class="item i-b v-top ph3 right">Año:</label>
+                        <input id="release_year" type="text" name="release_year" value="" required="" class="item i-b v-top ph9">
+                    </div>
+                    <div class="container p1">
+                        <label for="rating" class="item i-b v-top ph3 right">Calificación: </label>
+                        <input id="rating_movie" type="text" name="rating" value="" required="" class="item i-b v-top ph9">
+                    </div>
+                    <div class="container p1">
+                        <label for="image" class="item i-b v-top ph3 right">Poster: </label>
+                        <input id="poster_movie" type="text" name="image" value="" required="" class="item i-b v-top ph9">
+                    </div>
+                    <div class="container p1">
+                        <input type="submit" value="Guardar Cambios" class="item ph4 mauto button edit">
+                        <!-- <input type="hidden" name="_method" value="PUT"> -->
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+    </section>
+    <script src="./edit-movie.js"></script>
+</body>
+
+</html>
